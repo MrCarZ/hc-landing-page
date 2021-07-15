@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@300;600&display=swap');
 
 body, html {
     height: 100vh;
@@ -36,4 +37,16 @@ span{
     flex-direction: row;
     justify-items: center;
     justify-content: space-evenly;
+}
+
+.block-content {
+    text-align: center;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.block-content > span{
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    color: #18191a;
 }
