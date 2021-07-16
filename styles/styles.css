@@ -53,6 +53,7 @@ span{
 
 .footer{
     background-color: #ffffff;    
+    text-align: center;
 }
 
 .curved-header{
@@ -66,4 +67,33 @@ span{
     left: 50%;
     height: 100%;
     transform: translate(-50%, -50%);
+}
+
+.line{
+    width: 35%;
+    margin: auto;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.additional-info{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-info > .info-title{
+    display: flex;
+}
+
+.info-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-images > img {
+    max-width: 30%;
+    max-height: 20%;
 }
