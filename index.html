@@ -9,12 +9,12 @@
     <script type="text/javascript" src="./scripts/script.js"></script>
   </head>
 
-  <body class="bg">
+  <body class="bg" onload="handleTimer()">
     <section class="front-section">
-      <span>
-        <h1> BLACK FRIDAY 2021 </h1>
+      <div class='front-section-wrapper'>
+        <h1>BLACK FRIDAY 2021</h1>
         <h2>50% Off. Cashback. Free Shipping. All in one place.</h2>
-        <h1>00:00:00</h1>
+        <h1 id='black-timer'>00d:00h:00m:00s</h1>
 
         <div class="form">
           <input
@@ -23,7 +23,7 @@
             name="email-field"
             placeholder="Input your e-mail address"
             class="w3-input w3-round"
-        />
+          />
           <button
             id="email-button"
             onclick="handleButton(document.getElementById('email-field'), document.getElementById('button-field'))"
@@ -32,7 +32,8 @@
             SAVE THE DATE
           </button>
         </div>
-      </span>
+        <span id="input-feedback"></span>
+      </div>
     </section>
 
     <section>

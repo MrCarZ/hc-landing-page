@@ -1,135 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@300;600&display=swap");
 
-body, html {
-    height: 100vh;
-    width: 100vw;
+body,
+html {
+  height: 100vh;
+  width: 100vw;
 }
 
-span{
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
+.bg {
+  background-color: #18191a;
 }
 
-.bg{
-    background-color: #18191a;
+.front-section {
+  text-align: center;
 }
 
-.front-section{
-    text-align: center;
+.curved {
+  height: 100%;
 }
 
-.curved{
-    height: 100%;
+.curved > .upper {
+  background-color: #18191a;
 }
 
-.curved > .upper{
-    background-color: #18191a;
-}
-
-.curved > .content{
-    height: 100%;
+.curved > .content {
+  height: 100%;
 }
 
 .content {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: space-evenly;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-evenly;
 }
 
 .block-content {
-    text-align: center;
-    max-width: 30%;
-    margin-bottom: 50px;
+  text-align: center;
+  max-width: 30%;
+  margin-bottom: 50px;
 }
 
-.block-content > span{
-    text-align: start;
-    font-family: 'Open Sans', sans-serif;
-    color: #18191a;
+.block-content > h4 {
+  font-family: "Archivo Black", sans-serif;
+  color: #18191a;
 }
 
-.footer{
-    background-color: #ffffff;    
-    text-align: center;
+.block-content > span {
+  text-align: start;
+  font-family: "Open Sans", sans-serif;
+  color: #18191a;
 }
 
-.curved-header{
-    position: relative;
-    margin-bottom: -15px;
+.footer {
+  background-color: #ffffff;
+  text-align: center;
 }
 
-.front-image{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    height: 95%;
-    transform: translate(-50%, -50%);
+.curved-header {
+  position: relative;
+  margin-bottom: -15px;
 }
 
-.line{
-    width: 40%;
-    margin: auto;
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: #dddddd;
+.front-image {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  height: 95%;
+  transform: translate(-50%, -50%);
 }
 
-
-
-.additional-info{
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.line {
+  width: 40%;
+  margin: auto;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #dddddd;
 }
 
-
-.additional-info > .info-title{
-    display: flex;
+.additional-info {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.info-images{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.additional-info > .info-title {
+  display: flex;
+}
+
+.additional-info > div > h2 {
+  font-family: "Archivo Black", sans-serif;
+  color: #18191a;
+}
+
+.info-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .info-images > img {
-    max-width: 30%;
-    max-height: 20%;
+  max-width: 30%;
+  max-height: 20%;
 }
 
-.footer{
-    background-color: #18191a;
+.footer {
+  background-color: #18191a;
 }
 
-.footer > h3{
-    color: #ffffff;
+.footer > h3 {
+  color: #ffffff;
 }
 
-.footer > h3 > a{
-    text-decoration: none;
-    color: #b0b3b8;
+.footer > h3 > a {
+  text-decoration: none;
+  color: #b0b3b8;
 }
 
-.bottom{
-    background-color: #ffffff;
+.bottom {
+  background-color: #ffffff;
 }
 
-.form{
-    width: 35%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 25px auto 25px auto;
+.form {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto auto auto auto;
 }
 
-.form > button{
-    width: 30%;
+.form > button {
+  width: 40%;
 }
 
 .form > input {
-    width: 55%;
+  width: 55%;
+}
+
+.front-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.front-section-wrapper > h1,
+.front-section-wrapper > h2,
+.front-section-wrapper > div > button {
+  font-family: "Archivo Black", sans-serif;
+  color: #ffffff;
 }
