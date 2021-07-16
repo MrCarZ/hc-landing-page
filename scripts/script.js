@@ -55,3 +55,29 @@ const invalidMessage = (feedbackMessage) => {
   feedbackMessage.style.color = "#FF0000";
 };
 
+const handleTimer = () => {
+    const elementTimer = document.getElementById('black-timer');
+
+    var blackFridayDay = (new Date("Nov 26, 2021 00:00:00").getTime() / 1000 ); // Division by 1000 for miliseconds into seconds conversion
+    blackFridayDay = floatToInt(blackFridayDay);
+
+    setInterval(() => {
+       
+        const now = floatToInt((Date.now() / 1000)); // Division by 1000 for miliseconds into seconds conversion
+
+        const timer = blackFridayDay - now;
+
+        if(timer > 0){
+            const days = floatToInt((timer/(24*60*60)));
+            const hours = floatToInt(((timer%(24*60*60))/(60*60))); 
+            const minutes = floatToInt(((timer%(24*60*60) - hours*(60*60))/60));
+            const seconds = floatToInt(((timer%(24*60*60) - hours*(60*60) - minutes*60)));
+            elementTimer.textContent = `${days}d:${hours}h:${minutes}m:${seconds}s`;
+        }
+        else{
+            elementTimer.textContent = "HAS STARTED!";
+        }
+    }, 1000);
+}
+
+const floatToInt = (num) => num | 0 // apply bitwise XOR operation to ceil number
