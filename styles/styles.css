@@ -111,6 +111,7 @@ span{
 }
 
 .footer > h3 > a{
+    text-decoration: none;
     color: #b0b3b8;
 }
 
