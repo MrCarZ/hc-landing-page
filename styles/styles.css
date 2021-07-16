@@ -63,25 +63,29 @@ span{
 
 .front-image{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     height: 100%;
     transform: translate(-50%, -50%);
 }
 
 .line{
-    width: 35%;
+    width: 40%;
     margin: auto;
     border-bottom: solid;
     border-width: 1px;
     border-color: #dddddd;
 }
 
+
+
 .additional-info{
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
+
 
 .additional-info > .info-title{
     display: flex;
@@ -96,4 +100,20 @@ span{
 .info-images > img {
     max-width: 30%;
     max-height: 20%;
+}
+
+.footer{
+    background-color: #18191a;
+}
+
+.footer > h3{
+    color: #ffffff;
+}
+
+.footer > h3 > a{
+    color: #b0b3b8;
+}
+
+.bottom{
+    background-color: #ffffff;
 }
