@@ -15,11 +15,13 @@ html {
   text-align: center;
 }
 
-.curved {
+.upper-wrapper {
+  background-color: #ffffff;
   height: 100%;
 }
 
-.curved > .upper {
+.upper-wrapper > .curved-header > .upper,
+.bottom-wrapper {
   background-color: #18191a;
 }
 
@@ -148,4 +150,74 @@ html {
 .front-section-wrapper > div > button {
   font-family: "Archivo Black", sans-serif;
   color: #ffffff;
+}
+
+/* Media Queries para responsividade */
+
+@media (max-width: 1200px) {
+  .form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .front-section-wrapper > h1 {
+    font-size: 1.5em;
+  }
+
+  .front-section-wrapper > h2 {
+    font-size: 1.2em;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form > button {
+    width: inherit;
+  }
+
+  .form > input {
+    width: inherit;
+    margin-bottom: 10px;
+  }
+
+  .form {
+    width: 80%;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .block-content {
+    max-width: 70%;
+    margin-bottom: 50px;
+  }
+  .info-images {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .info-images > img {
+    max-width: 60%;
+    max-height: 30%;
+  }
+
+  .front-image {
+    display: none;
+  }
+
+  .footer > h3 {
+    font-size: 1em;
+  }
 }

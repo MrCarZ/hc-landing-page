@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Black Friday Imperdível!!</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
     <charset meta="utf-8" />
     <charset meta="pt-br" />
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -11,10 +16,10 @@
 
   <body class="bg" onload="handleTimer()">
     <section class="front-section">
-      <div class='front-section-wrapper'>
+      <div class="front-section-wrapper">
         <h1>BLACK FRIDAY 2021</h1>
         <h2>50% Off. Cashback. Free Shipping. All in one place.</h2>
-        <h1 id='black-timer'>00d:00h:00m:00s</h1>
+        <h1 id="black-timer">00d:00h:00m:00s</h1>
 
         <div class="form">
           <input
@@ -38,80 +43,83 @@
 
     <section>
       <div class="curved">
-        <div class="curved-header">
-          <img class="front-image" src="./assets/online-shopping.png" />
+        <div class="upper-wrapper">
+          <div class="curved-header">
+            <img class="front-image" src="./assets/online-shopping.png" />
+            <svg
+              class="upper"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 319"
+            >
+              <path
+                fill="#ffffff"
+                fill-opacity="1"
+                d="M0,192L48,208C96,224,192,256,288,250.7C384,245,480,203,576,202.7C672,203,768,245,864,261.3C960,277,1056,267,1152,234.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="block-content">
+              <img
+                src="https://img.icons8.com/material/100/000000/discount--v1.png"
+              />
+              <h4>All products with discounts up to 50%</h4>
+              <span>
+                You can buy as many as you can! Every single product in our shop
+                will have at least 5% discount applied and the discount stacks
+                with other coupons.</span
+              >
+            </div>
+
+            <div class="block-content">
+              <img
+                src="https://img.icons8.com/ios-filled/100/000000/free-shipping.png"
+              />
+              <h4>Free Shipping throught all country</h4>
+              <span>
+                Every single product in our shop will be available with free
+                shipping included.</span
+              >
+            </div>
+
+            <div class="block-content">
+              <img
+                src="https://img.icons8.com/material/100/000000/coin-wallet.png"
+              />
+              <h4>Cashback based on original value</h4>
+              <span>
+                During our Black Friday, the Cashback system will return you an
+                amount of credit based on the percentage of the product price
+                WITHOUT the discount applied.</span
+              >
+            </div>
+          </div>
+
+          <div class="additional-info">
+            <div class="info-title">
+              <div class="line"></div>
+              <h2>Partners</h2>
+              <div class="line"></div>
+            </div>
+            <div class="info-images">
+              <img src="./assets/gama.png" />
+              <img src="./assets/vtex.png" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-wrapper">
           <svg
-            class="upper"
+            class="bottom"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 319"
           >
             <path
-              fill="#ffffff"
+              fill="#18191a"
               fill-opacity="1"
               d="M0,192L48,208C96,224,192,256,288,250.7C384,245,480,203,576,202.7C672,203,768,245,864,261.3C960,277,1056,267,1152,234.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
             ></path>
           </svg>
         </div>
-        <div class="content">
-          <div class="block-content">
-            <img
-              src="https://img.icons8.com/material/100/000000/discount--v1.png"
-            />
-            <h4>All products with discounts up to 50%</h4>
-            <span>
-              You can buy as many as you can! Every single product in our shop
-              will have at least 5% discount applied and the discount stacks
-              with other coupons.</span
-            >
-          </div>
-
-          <div class="block-content">
-            <img
-              src="https://img.icons8.com/ios-filled/100/000000/free-shipping.png"
-            />
-            <h4>Free Shipping throught all country</h4>
-            <span>
-              Every single product in our shop will be available with free
-              shipping included.</span
-            >
-          </div>
-
-          <div class="block-content">
-            <img
-              src="https://img.icons8.com/material/100/000000/coin-wallet.png"
-            />
-            <h4>Cashback based on original value</h4>
-            <span>
-              During our Black Friday, the Cashback system will return you an
-              amount of credit based on the percentage of the product price
-              WITHOUT the discount applied.</span
-            >
-          </div>
-        </div>
-
-        <div class="additional-info">
-          <div class="info-title">
-            <div class="line"></div>
-            <h2>Partners</h2>
-            <div class="line"></div>
-          </div>
-          <div class="info-images">
-            <img src="./assets/gama.png" />
-            <img src="./assets/vtex.png" />
-          </div>
-        </div>
-
-        <svg
-          class="bottom"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 319"
-        >
-          <path
-            fill="#18191a"
-            fill-opacity="1"
-            d="M0,192L48,208C96,224,192,256,288,250.7C384,245,480,203,576,202.7C672,203,768,245,864,261.3C960,277,1056,267,1152,234.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
       </div>
     </section>
 
