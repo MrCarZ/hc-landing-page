@@ -9,4 +9,4 @@ The idea was to implement a Landing Page regarding a Black Friday sale with the 
 
 It was an application developed using only HTML, CSS and Vanilla Javascript, and some custom styles from the internet.
 
-You can check the result at: https://blackfridaycarz.netlify.app/ 
+You can check the result at: carzventory.netlify.app 
